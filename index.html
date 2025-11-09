@@ -3,30 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayanth's Portfolio</title>
+    <title>Jayanth | Developer & Creator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="background-animation"></div>
+    <div class="stars"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#home" class="logo">Jayanth</a>
+            <a href="#home" class="logo">J.</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-glow"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm Jayanth</h1>
-                <p>Full Stack Developer | AI Enthusiast | Tech Lover</p>
-                <a href="#contact" class="cta-button">Get in Touch</a>
+                <h1 class="hero-title">
+                    <span class="letter">C</span>
+                    <span class="letter">r</span>
+                    <span class="letter">a</span>
+                    <span class="letter">f</span>
+                    <span class="letter">t</span>
+                    <span class="letter">i</span>
+                    <span class="letter">n</span>
+                    <span class="letter">g</span>
+                    <span class="letter"> </span>
+                    <span class="letter">T</span>
+                    <span class="letter">h</span>
+                    <span class="letter">e</span>
+                    <span class="letter"> </span>
+                    <span class="letter">F</span>
+                    <span class="letter">u</span>
+                    <span class="letter">t</span>
+                    <span class="letter">u</span>
+                    <span class="letter">r</span>
+                    <span class="letter">e</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer | AI Enthusiast | Tech Innovator</p>
+                <a href="#contact" class="cta-button primary">Start Building 🚀</a>
             </div>
         </div>
     </section>
@@ -34,21 +59,59 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate developer with expertise in building modern web applications and machine learning solutions. I love working with cutting-edge technologies and solving complex problems.</p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm a passionate developer who transforms ideas into elegant digital experiences. With expertise in cutting-edge technologies, I build scalable solutions that solve real-world problems.</p>
+                    <p>When I'm not coding, you'll find me exploring AI, contributing to open source, or experimenting with new frameworks.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedication</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">JavaScript</span>
-                <span class="skill-badge">React</span>
-                <span class="skill-badge">Node.js</span>
-                <span class="skill-badge">Machine Learning</span>
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-container">
+                        <div class="skill-badge"><span class="skill-icon">⚛</span> React</div>
+                        <div class="skill-badge"><span class="skill-icon">🎨</span> JavaScript</div>
+                        <div class="skill-badge"><span class="skill-icon">🎯</span> TypeScript</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skills-container">
+                        <div class="skill-badge"><span class="skill-icon">🟢</span> Node.js</div>
+                        <div class="skill-badge"><span class="skill-icon">🐍</span> Python</div>
+                        <div class="skill-badge"><span class="skill-icon">📊</span> SQL</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & ML</h3>
+                    <div class="skills-container">
+                        <div class="skill-badge"><span class="skill-icon">🤖</span> Machine Learning</div>
+                        <div class="skill-badge"><span class="skill-icon">🧠</span> Deep Learning</div>
+                        <div class="skill-badge"><span class="skill-icon">📈</span> Data Science</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -56,19 +119,37 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <h2 class="section-title">Featured Work</h2>
             <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A modern web application built with React and Node.js</p>
+                <div class="project-card" style="--delay: 0s">
+                    <div class="project-image gradient-1"></div>
+                    <h3>AI Chat Application</h3>
+                    <p>A modern web application with real-time AI integration, built with React and Node.js</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>AI</span>
+                        <span>WebSocket</span>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Machine learning model for data analysis</p>
+                <div class="project-card" style="--delay: 0.1s">
+                    <div class="project-image gradient-2"></div>
+                    <h3>ML Prediction Engine</h3>
+                    <p>Advanced machine learning model for predictive analytics with 95% accuracy</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Data</span>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Full stack application with real-time features</p>
+                <div class="project-card" style="--delay: 0.2s">
+                    <div class="project-image gradient-3"></div>
+                    <h3>Real-time Dashboard</h3>
+                    <p>Full-stack analytics dashboard with live data visualization and user authentication</p>
+                    <div class="project-tags">
+                        <span>Full Stack</span>
+                        <span>Dashboard</span>
+                        <span>Analytics</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,11 +158,21 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Feel free to reach out to me for any opportunities or collaborations.</p>
-            <a href="mailto:jayanth@example.com" class="cta-button">Email Me</a>
+            <h2 class="section-title">Let's Create Something Amazing</h2>
+            <p class="contact-subtitle">Ready to collaborate? Let's build the future together.</p>
+            <a href="mailto:contact@jayanth.dev" class="cta-button secondary">Get In Touch</a>
+            <div class="social-links">
+                <a href="#" class="social-icon">GitHub</a>
+                <a href="#" class="social-icon">LinkedIn</a>
+                <a href="#" class="social-icon">Twitter</a>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Jayanth. Crafted with <span class="heart">❤</span> and code.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
